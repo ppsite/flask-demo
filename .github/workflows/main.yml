@@ -46,7 +46,7 @@ jobs:
           ci-repository: pyfs/flask-demo-kustomize
           ci-ref: refs/heads/master
           ci-user: pyfs
-          ci-user-token: ${{ CI_TOKEN }}
+          ci-user-token: ${{ secrets.CI_TOKEN }}
           ci-name: CI
           ci-inputs: >-
             image=${{ secrets.USERNAME }}/flask-demo
