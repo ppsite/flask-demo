@@ -23,15 +23,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       
       - name: echo
         run: |
-          echo ${{env}}
+          echo ${{ DOCKERHUB.USERNAME }}
 
       # Runs a set of commands using the runners shell
-      - name: build image
-        run: |
-          make image
-          docker tag flask-demo:latest 364950776/flask-demo:${{ github.sha }}
-          docker push 364950776/flask-demo:${{ github.sha }}
+#       - name: build image
+#         run: |
+#           make image
+#           docker tag flask-demo:latest 364950776/flask-demo:${{ github.sha }}
+#           docker push 364950776/flask-demo:${{ github.sha }}
