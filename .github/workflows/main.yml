@@ -28,7 +28,7 @@ jobs:
       - name: Docker Login
         uses: docker/login-action@v1.10.0
         with:
-          username: ${{ secrets.USERNAME }}
+          username: 364950776
           password: ${{ secrets.PASSWORD }}
 
       # Runs a set of commands using the runners shell
