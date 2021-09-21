@@ -27,7 +27,7 @@ jobs:
       
       - name: echo
         run: |
-          echo ${{ DOCKERHUB.USERNAME }}
+          echo ${{ env.DOCKERHUB.USERNAME }}
 
       # Runs a set of commands using the runners shell
 #       - name: build image
